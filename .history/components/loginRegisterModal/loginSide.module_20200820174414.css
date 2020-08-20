@@ -1,0 +1,107 @@
+.loginSideMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 4rem;
+}
+
+.loginSidePhoneInput {
+    all: unset;
+    direction: rtl;
+    text-align: center;
+    width: calc(100% - 1.2rem);
+    color: #ffffffb4;
+    font-size: 0.9rem;
+    padding: 0.8rem 0.6rem;
+    background-color: #181922;
+    box-shadow: 0 0 1rem 0.5rem transparent;
+    margin-bottom: 2.5rem;
+}
+
+.loginSidePhoneInput:focus {
+    box-shadow: 0 0 0.5rem 0.1rem #a3ff12;
+}
+
+.loginSideButtonBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginSideButton {
+    all: unset;
+    font-family: Yekan;
+    padding: 0.7rem 1.5rem;
+    color: #181922;
+    font-size: 0.9rem;
+    background-color: #a3ff12;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.loginSideButton:hover {
+    background-color: #79c400;
+    transition: all 0.2s ease-in;
+}
+
+.loginSideInputErrorsSpan {
+    margin-top: -2rem;
+    margin-bottom: 1.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.7rem;
+    color: #f44336;
+    width: 94%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.loginStep2Main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.loginStep2MainTitle {
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0 0 3rem 0;
+}
+
+.loginStep2Buttonsbox {
+    margin-top: 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.loginStep2SubmitButton {
+    all: unset;
+    font-family: Yekan;
+    padding: 0.7rem 1.5rem;
+    color: #181922;
+    font-size: 0.9rem;
+    background-color: #a3ff12;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.loginStep2BackButton {
+    all: unset;
+    font-family: Yekan;
+    padding: 0.7rem 1.5rem;
+    color: #181922;
+    font-size: 0.9rem;
+    background-color: #f44336;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}

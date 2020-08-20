@@ -1,0 +1,80 @@
+.loginRegisterModal {
+    position: fixed;
+    top: 10rem;
+    left: calc(50% - 12rem);
+    width: 24rem;
+    height: 28rem;
+    background-image: url('../../public/Texture2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.1rem;
+    box-shadow: 0 0 2.5rem 0.1rem #a4ff1285;
+    overflow: hidden;
+    z-index: 200;
+}
+
+.loginRegisterModalHide {
+    display: none;
+    position: fixed;
+    top: 10rem;
+    left: calc(50% - 12rem);
+    width: 24rem;
+    height: 28rem;
+    background-image: url('../../public/Texture2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.1rem;
+    box-shadow: 0 0 2.5rem 0.1rem #a4ff1285;
+    overflow: hidden;
+    z-index: 200;
+}
+
+.loginRegisterModalLogo {
+    position: absolute;
+    top: 0;
+    left: calc(50% - 3.5rem);
+    width: 7rem;
+}
+
+.loginRegisterModalTop {
+    width: 100%;
+    height: 4.5rem;
+    background-image: url('../../public/footer-background-img\ 2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.registerModalTopTitle {
+    all: unset;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-left: 1rem;
+    cursor: pointer;
+    padding-left: 1rem;
+}
+
+.loginModalTopTitle {
+    all: unset;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-right: 1rem;
+    cursor: pointer;
+}

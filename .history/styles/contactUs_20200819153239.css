@@ -1,0 +1,145 @@
+.contact-us {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url('../img/New-Research-Reveals-That-There-Are-8-Different-Types-Of-Gamers.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    padding: 4rem 0;
+}
+
+.contact-us-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222430bb;
+}
+
+.contact-us-main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-left {
+    width: 45%;
+    z-index: 5;
+}
+
+.contact-us-inputs-box {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-us-top-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.contact-us-name-input {
+    direction: rtl;
+    all: unset;
+    width: 42%;
+    color: #ffffffb4;
+    font-size: 1rem;
+    padding: 1rem 0.8rem;
+    background-color: #181922;
+    box-shadow: 0 0 1rem 0.5rem transparent;
+}
+
+.contact-us-family-input {
+    direction: rtl;
+    all: unset;
+    width: 42%;
+    color: #ffffffb4;
+    font-size: 1rem;
+    padding: 1rem 0.8rem;
+    background-color: #181922;
+    box-shadow: 0 0 1rem 0.5rem transparent;
+}
+
+.contact-us-textarea {
+    all: unset;
+    direction: rtl;
+    width: 95%;
+    height: 11rem;
+    color: #ffffffb4;
+    font-size: 1rem;
+    padding: 1rem 0.8rem;
+    background-color: #181922;
+    box-shadow: 0 0 1rem 0.5rem transparent;
+    resize: none;
+}
+
+.contact-us-button-box {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.contact-us-button {
+    all: unset;
+    font-family: Yekan;
+    padding: 0.5rem 3rem;
+    color: #181922;
+    font-size: 0.9rem;
+    background-color: #A3FF12;
+    border: none;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.contact-us-button:hover {
+    background-color: #92ec00;
+}
+
+.contact-us-right {
+    width: 38%;
+    z-index: 5;
+}
+
+.contact-us-right h4 {
+    text-align: right;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.contact-us-right p {
+    direction: rtl;
+    text-align: justify;
+    color: #ffffffb4;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+.contact-us-socials {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border-top: 0.1rem solid #ffffffb4;
+    padding-top: 0.5rem;
+}
+
+.contact-us-social {
+    width: 1.5rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}

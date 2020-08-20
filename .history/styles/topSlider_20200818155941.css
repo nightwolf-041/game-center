@@ -1,0 +1,12 @@
+@media (min-width: 1700px) {
+    .top-slider-caption {
+        width: 1600px !important;
+        right: calc(50% - 600px) !important;
+    }
+    .top-slider .owl-nav {
+        right: calc(50% - 9rem) !important;
+    }
+    .top-slider .owl-dots {
+        right: calc(50% - 7rem) !important;
+    }
+}
