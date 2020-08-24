@@ -144,6 +144,19 @@ function Header(props) {
           <Link href="/blog">
             <a className="mobile-header-navbar-item">بلاگ</a>
           </Link>
+          // <ScrollLink
+          //   onClick={redirectToBlogHandler}
+          //   activeClass="mobile-header-navbar-item-active"
+          //   to="blog-section"
+          //   spy={true}
+          //   smooth={true}
+          //   duration={500}
+          //   offset={-100}
+          //   className="mobile-header-navbar-item"
+          //   id="mobile-blog-section-link"
+          // >
+          //   بلاگ
+          // </ScrollLink>
         )}
         {props.blogHeader ? (
           <Link href="/#contactUs">
@@ -254,8 +267,29 @@ function Header(props) {
             </Link>
           ) : (
             <Link href="/blog">
-              <a className="header-navbar-item">بلاگ</a>
+              <a
+                className={
+                  props.blogLinkActive
+                    ? 'header-navbar-item-active'
+                    : 'header-navbar-item'
+                }
+              >
+                بلاگ
+              </a>
             </Link>
+            // <ScrollLink
+            //   onClick={redirectToBlogHandler}
+            //   activeClass="header-navbar-item-active"
+            //   to="blog-section"
+            //   spy={true}
+            //   smooth={true}
+            //   duration={500}
+            //   offset={-100}
+            //   className="header-navbar-item"
+            //   id="blog-section-link"
+            // >
+            //   بلاگ
+            // </ScrollLink>
           )}
 
           {props.blogHeader ? (
