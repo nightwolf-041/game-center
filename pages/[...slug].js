@@ -1,16 +1,28 @@
 import React, { useState } from 'react';
 import Head from 'next/head';
+import { useRouter } from 'next/router'
+import axios from 'axios'
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
 import LoginRegisterModal from '../components/loginRegisterModal/LoginRegisterModal';
 
 const Post = (props) => {
   let [showLoginRegisterModal, setShowLoginRegisterModal] = useState(false);
+  let [registerSuccessModal, showRegisterSuccessModal] = useState(false);
 
   const showLoginRegisterModalHandler = () => {
     setShowLoginRegisterModal(true);
   };
   const hideLoginRegisterModalHandler = () => {
+    setShowLoginRegisterModal(false);
+    showRegisterSuccessModal(false);
+  };
+
+  const showRegisterSuccessModalHandler = () => {
+    showRegisterSuccessModal(true);
+  };
+  const hideRegisterSuccessModalHandler = () => {
+    showRegisterSuccessModal(false);
     setShowLoginRegisterModal(false);
   };
 
@@ -37,28 +49,30 @@ const Post = (props) => {
         blogHeader={true}
         showLoginRegisterModal={showLoginRegisterModalHandler}
       />
-      <div className="blog-post-main"></div>
+      <div className="container">
+        <div className="blog-post-main">
+          {props.post.description}
+        </div>
+      </div>
       <Footer blogHeader={true} />
       <LoginRegisterModal
         show={showLoginRegisterModal}
+        showSuccess={registerSuccessModal}
         hideLoginRegisterModal={hideLoginRegisterModalHandler}
+        showSuccessModalHandler={showRegisterSuccessModalHandler}
+        hideSuccessModalHandler={hideRegisterSuccessModalHandler}
       />
     </>
   );
 };
 
-// Post.getInitialProps = async ({query}) => {
-//   const { slug } = query
+Post.getInitialProps = async ({query}) => {
+  const { slug } = query
 
-//   const res = await axios.get(`http://185.211.59.237/Category/GetPrimaries?guid=${slug[1]}`)
-//   const bigData = await res.data
-//   const data = await res.data.primaryCategories
-//   // axiosConfig.get('/Category/' + guid, {
-//   const currentData = await axios.get(`http://185.211.59.237/Category/${slug[1]}?includeChildren=false`)
-//   const currentDataBigData = await currentData.data
-//   const categoryData = await currentData.data.category
+  const res = await axios.get(`http://185.211.56.9:5000/Post/${slug[1]}`)
+  const post = await res.data.post
 
-//   return { data, bigData, categoryData }
-// }
+  return { post }
+}
 
 export default Post;

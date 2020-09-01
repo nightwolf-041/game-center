@@ -7,7 +7,7 @@ import classes from './blogPostsSection.module.css';
 function BlogPostsItem(props) {
   return (
     <div className={classes.blogPostsItem}>
-      <Link href={`/[...slug].js`} as={`/blog/sdsdsd`}>
+      <Link href={`/[...slug].js`} as={`/blog/${props.guid}`}>
         <div className={classes.blogPostsItemImageBox}>
           <div className={classes.blogPostsItemImageBackdrop}></div>
           <img
@@ -18,7 +18,7 @@ function BlogPostsItem(props) {
         </div>
       </Link>
       <div className={classes.blogPostsItemTitleBox}>
-        <Link href={`/[...slug].js`} as={`/blog/sdsdsd`}>
+        <Link href={`/[...slug].js`} as={`/blog/${props.guid}`}>
           <h4 className={classes.blogPostsItemTitle}>{props.title}</h4>
         </Link>
       </div>
