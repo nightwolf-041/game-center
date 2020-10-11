@@ -1,0 +1,27 @@
+.panelPageMain {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background: url('../../public/3-32183_tom-clancy-s-the-division-season-pass-game.jpg')
+    center/cover no-repeat;
+  object-fit: fill;
+  overflow: hidden;
+  margin-top: 7.8rem;
+}
+
+.panelPageMainBackdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1819229f;
+  z-index: 1;
+}
+
+.panelPageMainTitle {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+}
