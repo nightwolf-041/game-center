@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #181922bb;
+    background-color: #1819229f;
     z-index: 0;
 }
 
@@ -149,12 +149,12 @@
 .panelTextareaLabelBox {
     width: 100%;
     direction: rtl;
-    margin-top: 0;
-    margin-bottom: 0.2rem;
 }
 
 .panelTextareaLabelBox label {
     color: #ffffffb4;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
 }
 
 .panelTextArea {
@@ -168,6 +168,7 @@
     padding: 1rem 0.6rem;
     background-color: #181922;
     box-shadow: 0 0 1rem 0.5rem transparent;
+    margin-bottom: 1rem;
 }
 
 .panelTextArea::placeholder {

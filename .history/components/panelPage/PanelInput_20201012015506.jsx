@@ -12,7 +12,7 @@ function PanelInput(props) {
     }
   };
   // { label, register, required }
-  const { register, required, pattern } = props;
+  const { register, required } = props;
 
   return (
     <>

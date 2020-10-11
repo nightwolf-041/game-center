@@ -331,14 +331,8 @@ function PanelPage() {
                 requireInput
                 centerText
                 register={register}
-                required="الزامیست"
-                pattern={{
-                  value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                  message: 'صحیح نیست',
-                }}
-                errors={errors.birthDay}
+                required
               />
-
               <PanelInput
                 name="phoneNumber"
                 inputID="phone-number"
@@ -347,6 +341,8 @@ function PanelPage() {
                 centerText
                 register={register}
                 required
+                // ref={register({ required: true })}
+                // ref={register({ required: true })}
               />
               <PanelInput
                 name="startYear"
@@ -354,7 +350,6 @@ function PanelPage() {
                 placeholderName="سال شروع فعالیت"
                 requireInput
                 centerText
-                // refrence={register({ required })}
                 register={register}
                 required
               />

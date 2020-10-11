@@ -334,7 +334,7 @@ function PanelPage() {
                 required="الزامیست"
                 pattern={{
                   value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                  message: 'صحیح نیست',
+                  message: 'Invalid email address',
                 }}
                 errors={errors.birthDay}
               />

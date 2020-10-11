@@ -330,23 +330,15 @@ function PanelPage() {
                 placeholderName="تاریخ تولد"
                 requireInput
                 centerText
-                register={register}
-                required="الزامیست"
-                pattern={{
-                  value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                  message: 'صحیح نیست',
-                }}
-                errors={errors.birthDay}
+                refrence={register({ required })}
               />
-
               <PanelInput
                 name="phoneNumber"
                 inputID="phone-number"
                 placeholderName="تلفن ثابت"
                 requireInput
                 centerText
-                register={register}
-                required
+                refrence={register({ required })}
               />
               <PanelInput
                 name="startYear"
@@ -355,8 +347,7 @@ function PanelPage() {
                 requireInput
                 centerText
                 // refrence={register({ required })}
-                register={register}
-                required
+                refrence={register({ required })}
               />
               <PanelInput
                 name="location"
@@ -364,8 +355,7 @@ function PanelPage() {
                 placeholderName="محل سکونت"
                 requireInput
                 rightToLeft
-                register={register}
-                required
+                refrence={register({ required })}
               />
             </div>
             <div className={classes.panelMainTopRight}>
@@ -374,56 +364,49 @@ function PanelPage() {
                 inputID="latin-name"
                 placeholderName="نام لاتین"
                 requireInput
-                register={register}
-                required
+                refrence={register({ required })}
               />
               <PanelInput
                 name="latinFamily"
                 inputID="latin-family"
                 placeholderName="نام خانوادگی لاتین"
                 requireInput
-                register={register}
-                required
+                refrence={register({ required })}
               />
               <PanelInput
                 name="email"
                 inputID="email"
                 placeholderName="ایمیل"
                 requireInput
-                register={register}
-                required
+                refrence={register({ required })}
               />
               <PanelInput
                 name="gender"
                 inputID="gender"
                 placeholderName="جنسیت"
                 requireInput
-                register={register}
-                required
+                refrence={register({ required })}
               />
               <PanelInput
                 name="nickName"
                 inputID="nick-name"
                 placeholderName="اسم مستعار"
                 requireInput
-                register={register}
-                required
+                refrence={register({ required })}
               />
               <PanelInput
                 name="activities"
                 inputID="activities"
                 placeholderName="حوضه فعالیت"
                 requireInput
-                register={register}
-                required
+                refrence={register({ required })}
               />
               <PanelInput
                 name="identifireCode"
                 inputID="identifire-code"
                 placeholderName="کد معرف"
                 centerText
-                register={register}
-                required
+                refrence={register({ required })}
               />
             </div>
           </div>

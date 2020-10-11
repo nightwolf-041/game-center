@@ -14,7 +14,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #181922bb;
+    background-color: #1819229f;
     z-index: 0;
 }
 
@@ -72,16 +72,15 @@
 .panelMainInputBox {
     position: relative;
     width: 100%;
-    /* height: 4.5rem; */
-    height: 6.5rem;
+    height: 4.5rem;
 }
 
 .panelMainInputPlaceholderBox {
-    /* position: absolute;
+    position: absolute;
     top: 0.7rem;
-    right: 0.7rem; */
-    direction: rtl;
-    margin-bottom: 0.2rem;
+    right: 0.7rem;
+    /* direction: rtl;
+    margin-bottom: 0.2rem; */
     color: #ffffffb4;
 }
 
@@ -140,23 +139,6 @@
     box-shadow: 0 0 0.5rem 0.1rem #a3ff12;
 }
 
-.panelTextAreaBox {
-    width: 100%;
-    direction: rtl;
-    z-index: 10;
-}
-
-.panelTextareaLabelBox {
-    width: 100%;
-    direction: rtl;
-    margin-top: 0;
-    margin-bottom: 0.2rem;
-}
-
-.panelTextareaLabelBox label {
-    color: #ffffffb4;
-}
-
 .panelTextArea {
     all: unset;
     direction: rtl;
@@ -168,6 +150,8 @@
     padding: 1rem 0.6rem;
     background-color: #181922;
     box-shadow: 0 0 1rem 0.5rem transparent;
+    margin-bottom: 1rem;
+    z-index: 10;
 }
 
 .panelTextArea::placeholder {
@@ -185,7 +169,7 @@
     margin-bottom: 0.5rem;
     text-align: right;
     font-size: 0.8rem;
-    color: #a3ff12;
+    color: rgb(230, 48, 48);
     z-index: 5;
 }
 

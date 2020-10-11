@@ -331,14 +331,8 @@ function PanelPage() {
                 requireInput
                 centerText
                 register={register}
-                required="الزامیست"
-                pattern={{
-                  value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                  message: 'صحیح نیست',
-                }}
-                errors={errors.birthDay}
+                requiredes={{ required }}
               />
-
               <PanelInput
                 name="phoneNumber"
                 inputID="phone-number"
@@ -346,7 +340,7 @@ function PanelPage() {
                 requireInput
                 centerText
                 register={register}
-                required
+                requiredes={{ required }}
               />
               <PanelInput
                 name="startYear"
@@ -354,9 +348,9 @@ function PanelPage() {
                 placeholderName="سال شروع فعالیت"
                 requireInput
                 centerText
-                // refrence={register({ required })}
+                // refrence={register({ requiredes={{ required }} })}
                 register={register}
-                required
+                requiredes={{ required }}
               />
               <PanelInput
                 name="location"
@@ -365,7 +359,7 @@ function PanelPage() {
                 requireInput
                 rightToLeft
                 register={register}
-                required
+                requiredes={{ required }}
               />
             </div>
             <div className={classes.panelMainTopRight}>
@@ -375,7 +369,7 @@ function PanelPage() {
                 placeholderName="نام لاتین"
                 requireInput
                 register={register}
-                required
+                requiredes={{ required }}
               />
               <PanelInput
                 name="latinFamily"
@@ -383,7 +377,7 @@ function PanelPage() {
                 placeholderName="نام خانوادگی لاتین"
                 requireInput
                 register={register}
-                required
+                requiredes={{ required }}
               />
               <PanelInput
                 name="email"
@@ -391,7 +385,7 @@ function PanelPage() {
                 placeholderName="ایمیل"
                 requireInput
                 register={register}
-                required
+                requiredes={{ required }}
               />
               <PanelInput
                 name="gender"
@@ -399,7 +393,7 @@ function PanelPage() {
                 placeholderName="جنسیت"
                 requireInput
                 register={register}
-                required
+                requiredes={{ required }}
               />
               <PanelInput
                 name="nickName"
@@ -407,7 +401,7 @@ function PanelPage() {
                 placeholderName="اسم مستعار"
                 requireInput
                 register={register}
-                required
+                requiredes={{ required }}
               />
               <PanelInput
                 name="activities"
@@ -415,7 +409,7 @@ function PanelPage() {
                 placeholderName="حوضه فعالیت"
                 requireInput
                 register={register}
-                required
+                requiredes={{ required }}
               />
               <PanelInput
                 name="identifireCode"
@@ -423,7 +417,7 @@ function PanelPage() {
                 placeholderName="کد معرف"
                 centerText
                 register={register}
-                required
+                requiredes={{ required }}
               />
             </div>
           </div>

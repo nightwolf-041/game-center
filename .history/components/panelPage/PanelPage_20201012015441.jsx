@@ -332,10 +332,10 @@ function PanelPage() {
                 centerText
                 register={register}
                 required="الزامیست"
-                pattern={{
+                pattern= {
                   value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                  message: 'صحیح نیست',
-                }}
+                  message: 'Invalid email address',
+                }
                 errors={errors.birthDay}
               />
 

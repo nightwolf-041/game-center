@@ -12,7 +12,7 @@ function PanelInput(props) {
     }
   };
   // { label, register, required }
-  const { register, required, pattern } = props;
+  const { required } = props;
 
   return (
     <>
@@ -25,19 +25,13 @@ function PanelInput(props) {
           type="text"
           className={renderInputClassName()}
           id={props.inputID}
-          name={props.name}
-          // ref={register({ required })}
-          ref={register({
-            required,
-            pattern,
-          })}
+          name={props.label}
+          ref={props.register({ required })}
         />
       </div>
-      {props.errors && (
-        <span className={classes.panelInputValidationSpan}>
-          {props.errors.message}
-        </span>
-      )}
+      <span className={classes.panelInputValidationSpan}>
+        {props.validMessage}
+      </span>
     </>
   );
 }

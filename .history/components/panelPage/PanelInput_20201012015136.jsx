@@ -12,7 +12,7 @@ function PanelInput(props) {
     }
   };
   // { label, register, required }
-  const { register, required, pattern } = props;
+  const { register, required } = props;
 
   return (
     <>
@@ -29,15 +29,16 @@ function PanelInput(props) {
           // ref={register({ required })}
           ref={register({
             required,
-            pattern,
+            pattern: {
+              value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+              message: 'Invalid email address',
+            },
           })}
         />
       </div>
-      {props.errors && (
-        <span className={classes.panelInputValidationSpan}>
-          {props.errors.message}
-        </span>
-      )}
+      <span className={classes.panelInputValidationSpan}>
+        {/* {props.validMessage} */}
+      </span>
     </>
   );
 }
