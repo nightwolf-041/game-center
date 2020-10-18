@@ -1,8 +1,0 @@
-@media (min-width: 993px) {
-    .header {
-        height: 8rem !important;
-    }
-    .mobile-header-items-box {
-        display: none !important;
-    }
-}

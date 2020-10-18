@@ -13,6 +13,7 @@
         "@fortawesome/free-solid-svg-icons": "^5.14.0",
         "@fortawesome/react-fontawesome": "^0.1.11",
         "axios": "^0.19.2",
+        "cookie": "^0.4.1",
         "filepond": "^4.21.1",
         "filepond-plugin-file-poster": "^2.3.0",
         "filepond-plugin-file-validate-size": "^2.2.2",

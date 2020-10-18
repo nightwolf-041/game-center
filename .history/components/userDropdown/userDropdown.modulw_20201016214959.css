@@ -1,0 +1,9 @@
+.userDropdown {
+    width: 7rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userDropdownItem {}

@@ -1,9 +1,0 @@
-.registerSideMain {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.registerSideTextInput {}
-
-.registerSidePhoneInput {}
