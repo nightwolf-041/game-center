@@ -14,7 +14,6 @@ function UserDropdown({ toggle, hideDropdown }) {
   const removeCookieHandler = () => {
     removeCookie('token');
     router.replace('/');
-    hideDropdown();
   };
 
   return (

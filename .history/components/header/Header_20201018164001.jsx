@@ -21,7 +21,7 @@ function Header(props) {
 
   useEffect(() => {
     setUserIconActiveClass(cookies.token !== undefined);
-  }, [cookies.token]);
+  }, []);
 
   let [toggleHamburger, setToggleHamburger] = useState(false);
   const toggleHamburgerMenu = () => {
@@ -187,7 +187,7 @@ function Header(props) {
           hideDropdown={() => setToggleUserDropdown(false)}
         />
         <div className="header-login-logo-keeper">
-          {userIconActiveClass ? (
+          {userIconActiveClass || cookies.token !== undefined ? (
             <FontAwesomeIcon
               icon={faUserAlt}
               onClick={showUserDropdown}

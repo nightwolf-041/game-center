@@ -21,7 +21,7 @@ function Header(props) {
 
   useEffect(() => {
     setUserIconActiveClass(cookies.token !== undefined);
-  }, [cookies.token]);
+  }, []);
 
   let [toggleHamburger, setToggleHamburger] = useState(false);
   const toggleHamburgerMenu = () => {

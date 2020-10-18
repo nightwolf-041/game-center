@@ -101,14 +101,14 @@
 
 .header-login-logo {
     font-size: 1.5rem !important;
-    /* color: #ffffff !important; */
+    color: #ffffff !important;
     cursor: pointer;
     margin-right: 1rem;
 }
 
 .header-login-logo-active {
     font-size: 1.5rem !important;
-    /* color: #a3ff12 !important; */
+    color: #a3ff12 !important;
     cursor: pointer;
     margin-right: 1rem;
 }

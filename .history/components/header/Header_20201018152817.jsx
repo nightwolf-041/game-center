@@ -17,11 +17,6 @@ function Header(props) {
   let router = useRouter();
   const [cookies] = useCookies(['token']);
   const [toggleUserDropdown, setToggleUserDropdown] = useState(false);
-  const [userIconActiveClass, setUserIconActiveClass] = useState(false);
-
-  useEffect(() => {
-    setUserIconActiveClass(cookies.token !== undefined);
-  }, [cookies.token]);
 
   let [toggleHamburger, setToggleHamburger] = useState(false);
   const toggleHamburgerMenu = () => {
@@ -187,18 +182,16 @@ function Header(props) {
           hideDropdown={() => setToggleUserDropdown(false)}
         />
         <div className="header-login-logo-keeper">
-          {userIconActiveClass ? (
+          {cookies.token !== undefined ? (
             <FontAwesomeIcon
               icon={faUserAlt}
-              onClick={showUserDropdown}
-              style={{ color: '#a3ff12' }}
+              onClick={props.showLoginRegisterModal}
               className="header-login-logo-active"
             />
           ) : (
             <FontAwesomeIcon
               icon={faUserAlt}
-              onClick={props.showLoginRegisterModal}
-              style={{ color: '#ffffff' }}
+              onClick={showUserDropdown}
               className="header-login-logo"
             />
           )}

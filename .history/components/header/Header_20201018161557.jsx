@@ -17,11 +17,6 @@ function Header(props) {
   let router = useRouter();
   const [cookies] = useCookies(['token']);
   const [toggleUserDropdown, setToggleUserDropdown] = useState(false);
-  const [userIconActiveClass, setUserIconActiveClass] = useState(false);
-
-  useEffect(() => {
-    setUserIconActiveClass(cookies.token !== undefined);
-  }, [cookies.token]);
 
   let [toggleHamburger, setToggleHamburger] = useState(false);
   const toggleHamburgerMenu = () => {
@@ -30,6 +25,24 @@ function Header(props) {
 
   const showUserDropdown = () => {
     setToggleUserDropdown((prevState) => !prevState);
+  };
+
+  const renderUserIcon = () => {
+    return cookies.token === undefined || cookies.token === null ? (
+      <FontAwesomeIcon
+        icon={faUserAlt}
+        onClick={props.showLoginRegisterModal}
+        style={{ color: '#ffffff' }}
+        className="header-login-logo"
+      />
+    ) : (
+      <FontAwesomeIcon
+        icon={faUserAlt}
+        onClick={showUserDropdown}
+        style={{ color: '#a3ff12' }}
+        className="header-login-logo-active"
+      />
+    );
   };
 
   return (
@@ -186,23 +199,7 @@ function Header(props) {
           toggle={toggleUserDropdown}
           hideDropdown={() => setToggleUserDropdown(false)}
         />
-        <div className="header-login-logo-keeper">
-          {userIconActiveClass ? (
-            <FontAwesomeIcon
-              icon={faUserAlt}
-              onClick={showUserDropdown}
-              style={{ color: '#a3ff12' }}
-              className="header-login-logo-active"
-            />
-          ) : (
-            <FontAwesomeIcon
-              icon={faUserAlt}
-              onClick={props.showLoginRegisterModal}
-              style={{ color: '#ffffff' }}
-              className="header-login-logo"
-            />
-          )}
-        </div>
+        <div className="header-login-logo-keeper">{renderUserIcon()}</div>
       </div>
       <div className="header-phone-logo-box">
         {props.blogHeader || props.panelHeader ? (

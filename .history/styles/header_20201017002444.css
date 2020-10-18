@@ -101,26 +101,25 @@
 
 .header-login-logo {
     font-size: 1.5rem !important;
-    /* color: #ffffff !important; */
+    color: #ffffff;
     cursor: pointer;
     margin-right: 1rem;
 }
 
 .header-login-logo-active {
     font-size: 1.5rem !important;
-    /* color: #a3ff12 !important; */
+    color: #a3ff12;
     cursor: pointer;
     margin-right: 1rem;
 }
 
-
-/* .header-login-logo-toggle {
+.header-login-logo-toggle {
     font-size: 1.5rem;
     color: #a3ff12;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #a3ff12, 0 0 40px #a3ff12, 0 0 50px #a3ff12, 0 0 60px #a3ff12, 0 0 70px #a3ff12;
     margin-right: 1rem;
     cursor: pointer;
-} */
+}
 
 .header-phone-logo-box {
     position: absolute;
