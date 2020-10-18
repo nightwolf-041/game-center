@@ -1,8 +1,0 @@
-.loginRegisterModal {
-    position: fixed;
-    top: 5rem;
-    left: calc(50% - 9rem);
-    widows: 18rem;
-    height: 23rem;
-    overflow: hidden;
-}
